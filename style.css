@@ -19,6 +19,38 @@ body {
   scroll-snap-stop: always;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: rgb(88, 88, 88); */
+  font-family: 'Poppins', sans-serif;
+  top: 0;
+  z-index: 999;
+  position: sticky;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  margin: 1em;
+  width: 50%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+
+.nav-links a:hover {
+  color: orange;
+}
+
 .container {
   overflow-y: scroll;
   height: 100vh;
@@ -30,7 +62,6 @@ body {
 
 .backgroundImg {
   background-image: url('media/codeWallpaperBlur.jpg');
-  /* background-size: 100%; */  
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -48,7 +79,6 @@ section {
 .parallax {
   /* The image used */
   background-image: url('media/codeWallpaperBlur.jpg');
-  /* background-size: 100%; */
   opacity: 0.2;
 
   /* Full height */
@@ -78,6 +108,7 @@ section {
   /* transform: translate(-50%, -50%); */
   transform-style: preserve-3d;
   /* perspective: 3000px; */
+  
   
 }
 
