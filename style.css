@@ -17,6 +17,7 @@ body {
   overflow: hidden;
   scroll-snap-type: y mandatory;
   scroll-snap-stop: always;
+  scroll-behavior: smooth;
 }
 
 .navbar {
@@ -177,4 +178,68 @@ section {
   grid-row-gap: 1em;
   grid-auto-rows: auto;
   justify-items: center;
+  width: 80%;
+  height: 80%;
+}
+
+.thirdSection {
+  display: grid;
+  grid-row-gap: 1em;
+  grid-auto-rows: auto;
+  justify-items: center;
+  width: 80%;
+  height: 80%;
+}
+
+.education-title {
+  padding: 0px;
+  margin: 0px;
+}
+
+.education-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.education-box {
+  background: rgba(128, 128, 128, 0.1);
+  width: 30vw;
+  height: 30vh;
+  margin: 2em;
+  text-align: center;
+  line-height: 2em;
+  color: rgba(255, 165, 0, 0.3);
+  font-size: 22px;
+  border-radius: 0.5em;
+  transition: all 0.5s ease;
+}
+
+.education-box:hover{
+  color: rgba(255, 165, 0);
+  background: rgba(55, 55, 55, 0.9);
+  border-radius: 1.5em;
+}
+
+.education-box li {
+  list-style-type: none;
+}
+
+.education-box2 {
+  background: rgba(128, 128, 128, 0.1);
+  width: 40vw;
+  height: 28vh;
+  margin: 2em;
+  text-align: center;
+  line-height: 1.5em;
+  color: rgba(255, 165, 0, 0.3);
+  font-size: 20px;
+  border-radius: 1em;
+  transition: all 0.5s ease;
+}
+
+.education-box2:hover{
+  color: rgba(255, 165, 0);
+  background: rgba(55, 55, 55, 0.9);
+  border-radius: 1.5em;
 }
