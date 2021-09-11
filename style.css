@@ -25,7 +25,7 @@ body {
   justify-content: space-around;
   align-items: center;
   /* background-color: rgb(88, 88, 88); */
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   top: 0;
   z-index: 999;
   position: sticky;
@@ -62,7 +62,7 @@ body {
 }
 
 .backgroundImg {
-  background-image: url('media/codeWallpaperBlur.jpg');
+  background-image: url("media/codeWallpaperBlur.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -79,11 +79,11 @@ section {
 
 .parallax {
   /* The image used */
-  background-image: url('media/codeWallpaperBlur.jpg');
+  background-image: url("media/codeWallpaperBlur.jpg");
   opacity: 0.2;
 
   /* Full height */
-  height: 50%; 
+  height: 50%;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -92,7 +92,7 @@ section {
   /* background-size: cover; */
 }
 
-.pic{
+.pic {
   width: 15em;
   height: 15em;
   border-radius: 50%;
@@ -102,15 +102,13 @@ section {
   float: center;
   margin-bottom: 5vh;
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
   /* width: 20em; */
   /* height: 20em; */
   /* border-radius: 50%; */
   /* transform: translate(-50%, -50%); */
   transform-style: preserve-3d;
   /* perspective: 3000px; */
-  
-  
 }
 
 /* .logoPic img{
@@ -147,7 +145,6 @@ section {
   text-shadow: 2em;
   text-align: center;
   vertical-align: middle;
- 
 }
 
 .one {
@@ -167,7 +164,6 @@ section {
 .five {
   background: rgba(68, 73, 90, 0.6);
 } */
-
 
 .firstSection {
   display: grid;
@@ -197,7 +193,7 @@ section {
   margin: 0px;
 }
 
-.education-container{
+.education-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -217,7 +213,7 @@ section {
   word-wrap: break-word;
 }
 
-.education-box:hover{
+.education-box:hover {
   color: rgba(255, 165, 0);
   /* background: rgba(55, 55, 55, 0.9); */
   border-radius: 1.5em;
@@ -240,7 +236,7 @@ section {
   transition: all 0.5s ease;
 }
 
-.education-box2:hover{
+.education-box2:hover {
   color: rgba(255, 165, 0);
   border-radius: 1.5em;
 }
@@ -274,7 +270,7 @@ section {
   padding: 20px 15px;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+  box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
   transition: 0.3s ease-in-out;
 }
 
@@ -288,9 +284,9 @@ section {
   width: 260px;
   height: 260px;
   top: -60px;
-  left: 5px; 
+  left: 5px;
   z-index: 1;
-  box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+  box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
 }
 
 .project-box .card .imgBox img {
@@ -298,7 +294,7 @@ section {
   border-radius: 4px;
 }
 
-.project-box .card .card-content{
+.project-box .card .card-content {
   position: relative;
   margin-top: -200px;
   padding: 10px 15px;
@@ -336,7 +332,7 @@ section {
   transition: all 0.5s ease;
 }
 
-.hobby-box:hover{
+.hobby-box:hover {
   border-radius: 1.5em;
 }
 
@@ -355,19 +351,32 @@ section {
   transition: all 0.5s ease;
 }
 
-.hobby-box2:hover{
+.hobby-box2:hover {
   border-radius: 1.5em;
 }
 
-.audioPlayerDiv {
+.audioPlayerTitleText {
   padding-bottom: 1vh;
+}
+
+.audioPlayerStyle {
+  border-radius:7px 7px 7px 7px;
+}
+
+audio {
+  width: 100% !important;
+  height: 30px !important;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: rgb(121, 121, 121) !important;
 }
 
 .playlist {
   list-style: none;
 }
 
-.playlist li a{
+.playlist li a {
   color: orange;
   text-decoration: none;
 }
