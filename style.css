@@ -154,9 +154,10 @@ section {
   background-size: 100%;
 }
 .two {
-  background: rgba(15, 17, 143, 0.6);
+  background: rgba(6, 7, 53, 0.6);
 }
-.three {
+
+/* .three {
   background: rgba(22, 47, 70, 0.6);
 }
 .four {
@@ -165,7 +166,7 @@ section {
 
 .five {
   background: rgba(68, 73, 90, 0.6);
-}
+} */
 
 
 .firstSection {
@@ -191,7 +192,7 @@ section {
   height: 80%;
 }
 
-.education-title {
+.section-title {
   padding: 0px;
   margin: 0px;
 }
@@ -210,7 +211,7 @@ section {
   text-align: center;
   line-height: 2em;
   color: rgba(255, 165, 0, 0.9);
-  font-size: 22px;
+  font-size: 18px;
   border-radius: 0.5em;
   transition: all 0.5s ease;
 }
@@ -222,7 +223,7 @@ section {
 }
 
 .education-box li {
-  list-style-type: none;
+  /* list-style-type: none; */
 }
 
 .education-box2 {
@@ -233,13 +234,83 @@ section {
   text-align: center;
   line-height: 1.5em;
   color: rgba(255, 165, 0, 0.9);
-  font-size: 20px;
+  font-size: 18px;
   border-radius: 1em;
-  transition: all 0.5s ease;
+  transition: all 1s ease;
 }
 
 .education-box2:hover{
   color: rgba(255, 165, 0);
-  /* background: rgba(55, 55, 55, 0.9); */
   border-radius: 1.5em;
+}
+
+.education-box2 li {
+  list-style-type: none;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.project-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.project-box .card {
+  border-radius: 4px;
+  position: relative;
+  max-width: 300px;
+  height: 200px;
+  background: rgba(55, 55, 55, 0.2);
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+  transition: 0.3s ease-in-out;
+}
+
+.project-box .card:hover {
+  height: 420px;
+  background: rgba(55, 55, 55, 0.9);
+}
+
+.project-box .card .imgBox {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -60px;
+  left: 5px; 
+  z-index: 1;
+  box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+}
+
+.project-box .card .imgBox img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.project-box .card .card-content{
+  position: relative;
+  margin-top: -200px;
+  padding: 10px 15px;
+  text-align: center;
+  color: orange;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.project-box .card:hover .card-content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
 }
