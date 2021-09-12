@@ -103,26 +103,8 @@ section {
   margin-bottom: 5vh;
   position: relative;
   overflow: hidden;
-  /* width: 20em; */
-  /* height: 20em; */
-  /* border-radius: 50%; */
-  /* transform: translate(-50%, -50%); */
-  transform-style: preserve-3d;
-  /* perspective: 3000px; */
-}
-
-/* .logoPic img{
-  transform: rotateX(70deg) rotateZ(-60deg) translate3d(-120px, 0px, 70px);
-  box-shadow: -80px 60px 15px 5px rgba(0,0,0,0.4);
-  transition: all .4s;
   transform-style: preserve-3d;
 }
-
-.logoPic:hover img{
-  
-  transform: rotateX(0deg) rotateZ(0deg) translate3d(0px, 0px, 0px);
-  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
-} */
 
 .profilePic {
   float: center;
@@ -154,17 +136,6 @@ section {
   background: rgba(6, 7, 53, 0.6);
 }
 
-/* .three {
-  background: rgba(22, 47, 70, 0.6);
-}
-.four {
-  background: rgb(32, 46, 94, 0.6);
-}
-
-.five {
-  background: rgba(68, 73, 90, 0.6);
-} */
-
 .firstSection {
   display: grid;
   justify-items: center;
@@ -191,6 +162,12 @@ section {
 .section-title {
   padding: 0px;
   margin: 0px;
+}
+
+.firstSection-box {
+  background: rgba(22, 22, 22, 0.7);
+  text-align: center;
+  border-radius: 0.5em;
 }
 
 .education-container {
