@@ -288,6 +288,30 @@ section {
   transition-delay: 0.3s;
 }
 
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.experience-box {
+  background: rgba(55, 55, 55, 0.7);
+  width: 30vw;
+  height: 35vh;
+  margin: 1em;
+  text-align: center;
+  line-height: 2em;
+  color: rgba(255, 165, 0, 0.9);
+  font-size: 18px;
+  border-radius: 1em;
+  word-wrap: break-word;
+  transition: all 0.5s ease;
+}
+
+.experience-box:hover {
+  border-radius: 1.5em;
+}
+
 .hobby-container {
   display: flex;
   flex-direction: column;
