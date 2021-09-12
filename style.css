@@ -187,6 +187,7 @@ section {
   border-radius: 0.5em;
   transition: all 0.5s ease;
   word-wrap: break-word;
+  overflow: hidden;
 }
 
 .education-box:hover {
@@ -210,6 +211,7 @@ section {
   font-size: 18px;
   border-radius: 1em;
   transition: all 0.5s ease;
+  overflow: hidden;
 }
 
 .education-box2:hover {
@@ -306,10 +308,15 @@ section {
   border-radius: 1em;
   word-wrap: break-word;
   transition: all 0.5s ease;
+  overflow:hidden;
 }
 
 .experience-box:hover {
   border-radius: 1.5em;
+}
+
+.experience-box li {
+  list-style: none;
 }
 
 .hobby-container {
@@ -330,6 +337,7 @@ section {
   border-radius: 1em;
   word-wrap: break-word;
   transition: all 0.5s ease;
+  overflow:hidden;
 }
 
 .hobby-box:hover {
@@ -349,6 +357,7 @@ section {
   display: flex;
   flex-direction: column;
   transition: all 0.5s ease;
+  overflow:hidden;
 }
 
 .hobby-box2:hover {
