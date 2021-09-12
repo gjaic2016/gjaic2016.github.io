@@ -103,7 +103,6 @@ section {
   margin-bottom: 5vh;
   position: relative;
   overflow: hidden;
-  transform-style: preserve-3d;
 }
 
 .profilePic {
@@ -360,4 +359,41 @@ audio::-webkit-media-controls-panel {
 
 .playlist .current-song a {
   color: red;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-text {
+  background: rgba(55, 55, 55, 0.7);
+  width: 15vw;
+  height: 5vh;
+  margin: 2em;
+  text-align: center;
+  line-height: 2em;
+  color: rgba(255, 165, 0, 0.9);
+  font-size: 18px;
+  border-radius: 0.5em;
+  word-wrap: break-word;
+  transition: all 0.5s ease;
+}
+
+.contact-text:hover {
+  border-radius: 1em;
+}
+
+.contact-text a {
+  text-decoration: none;
+}
+
+.contactPictureClass {  
+    float: center;
+}
+
+.contact-pic {
+  width: 100%;
+  height:100%;
 }
