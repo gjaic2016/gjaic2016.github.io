@@ -402,8 +402,8 @@ audio::-webkit-media-controls-panel {
 
 .contact-text {
   background: rgba(55, 55, 55, 0.7);
-  width: 15vw;
-  height: 5vh;
+  width: 20vw;
+  height: 35vh;
   margin: 2em;
   text-align: center;
   line-height: 2em;
