@@ -404,7 +404,8 @@ audio::-webkit-media-controls-panel {
   background: rgba(55, 55, 55, 0.7);
   width: 20vw;
   height: 35vh;
-  margin: 2em;
+  margin: 1em;
+  padding-top: 1vh;
   text-align: center;
   line-height: 2em;
   color: rgba(255, 165, 0, 0.9);
@@ -429,4 +430,17 @@ audio::-webkit-media-controls-panel {
 .contact-pic {
   width: 100%;
   height:100%;
+}
+
+.contact-text-linkedin {
+  background: rgba(55, 55, 55, 0.7);
+  width: 20vw;
+  height: 5vh;
+  margin: 1em;
+  padding-top: 1vh;
+  text-align: center;
+  color: rgba(255, 165, 0, 0.9);
+  font-size: 18px;
+  border-radius: 0.5em;
+  word-wrap: break-word;
 }
