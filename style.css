@@ -31,6 +31,12 @@ body {
   position: sticky;
 }
 
+@media (max-width:769px) {
+  .navbar {
+    display: none;
+  }
+}
+
 .nav-links {
   display: flex;
   justify-content: space-around;
@@ -115,13 +121,13 @@ section {
 }
 
 .textLarge {
-  font-size: 48px;
+  font-size: clamp(2rem, 4vw, 5rem);
   font-weight: bold;
 }
 
 .textMedium {
-  font-size: 24px;
-  font-weight: bold;
+  font-size: calc(1vw + 1rem);
+  /* font-weight: bold; */
   color: orange;
   text-shadow: 2em;
   text-align: center;
@@ -158,7 +164,15 @@ section {
   height: 80%;
 }
 
+@media (max-width:769px){
+  .thirdSection {
+    width: 100%;
+  }
+}
+
 .section-title {
+  font-size: calc(1vw + 1rem);
+  font-weight: bold;
   padding: 0px;
   margin: 0px;
 }
@@ -175,6 +189,12 @@ section {
   justify-content: space-between;
 }
 
+@media (max-width:769px){
+  .education-container {
+    flex-direction: column;
+  }
+}
+
 .education-box {
   background: rgba(55, 55, 55, 0.7);
   width: 30vw;
@@ -183,11 +203,20 @@ section {
   text-align: center;
   line-height: 2em;
   color: rgba(255, 165, 0, 0.9);
-  font-size: 18px;
+  font-size: 1.2em;
   border-radius: 0.5em;
   transition: all 0.5s ease;
   word-wrap: break-word;
   overflow: hidden;
+}
+
+@media (max-width:769px) {
+  .education-box {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 5px;
+    font-size: 1em;
+  }
 }
 
 .education-box:hover {
@@ -208,10 +237,19 @@ section {
   text-align: center;
   line-height: 1.5em;
   color: rgba(255, 165, 0, 0.9);
-  font-size: 18px;
+  font-size: 1.2em;
   border-radius: 1em;
   transition: all 0.5s ease;
   overflow: hidden;
+}
+
+@media (max-width:769px) {
+  .education-box2 {
+    width: 80%;
+    margin: 0px;
+    margin-bottom: 5px;
+    font-size: 1em;
+  }
 }
 
 .education-box2:hover {
@@ -236,6 +274,12 @@ section {
   align-items: center;
   flex-wrap: wrap;
   padding: 30px;
+}
+
+@media (max-width:769px) {
+  .project-box {
+    padding: 0px;
+  }
 }
 
 .project-box .card {
@@ -311,6 +355,15 @@ section {
   overflow:hidden;
 }
 
+@media (max-width:769px) {
+  .experience-box {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 5px;
+    font-size: 1em;
+  }
+}
+
 .experience-box:hover {
   border-radius: 1.5em;
 }
@@ -340,6 +393,15 @@ section {
   overflow:hidden;
 }
 
+@media (max-width:769px) {
+  .hobby-box {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 5px;
+    font-size: 1em;
+  }
+}
+
 .hobby-box:hover {
   border-radius: 1.5em;
 }
@@ -358,6 +420,15 @@ section {
   flex-direction: column;
   transition: all 0.5s ease;
   overflow:hidden;
+}
+
+@media (max-width:769px) {
+  .hobby-box2 {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 5px;
+    font-size: 1em;
+  }
 }
 
 .hobby-box2:hover {
@@ -401,6 +472,9 @@ audio::-webkit-media-controls-panel {
 }
 
 .contact-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;;
   background: rgba(55, 55, 55, 0.7);
   width: 20vw;
   height: 35vh;
@@ -415,8 +489,42 @@ audio::-webkit-media-controls-panel {
   transition: all 0.5s ease;
 }
 
+@media (max-width:769px) {
+  .contact-text {
+    width: 100%;
+    margin: 0px;
+    
+  }
+}
+
 .contact-text:hover {
   border-radius: 1em;
+}
+
+.input-email {
+  border-radius: 4px; 
+  width:18vw; 
+  height:4vh;
+}
+
+@media (max-width:769px) {
+  .input-email {
+    width: 100%;
+  }
+}
+
+.input-message {
+  border-radius: 4px; 
+  width:18vw; 
+  height:22vh; 
+  font-size:14px; 
+  word-wrap: break-word;
+}
+
+@media (max-width:769px) {
+  .input-message {
+    width: 100%;
+  }
 }
 
 .contact-text a {
@@ -443,4 +551,11 @@ audio::-webkit-media-controls-panel {
   font-size: 18px;
   border-radius: 0.5em;
   word-wrap: break-word;
+}
+
+@media (max-width:769px) {
+  .contact-text-linkedin {
+    width: 100%;
+    margin-left: 0px;
+  }
 }
