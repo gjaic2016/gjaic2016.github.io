@@ -67,6 +67,12 @@ body {
   background-size: 100%; */
 }
 
+@media (max-width:769px) {
+  .container {
+    scroll-snap-type: none;
+  }
+}
+
 .backgroundImg {
   background-image: url("media/codeWallpaperBlur.jpg");
   background-repeat: no-repeat;
@@ -203,7 +209,7 @@ section {
   text-align: center;
   line-height: 2em;
   color: rgba(255, 165, 0, 0.9);
-  font-size: 1.2em;
+  font-size: 1em;
   border-radius: 0.5em;
   transition: all 0.5s ease;
   word-wrap: break-word;
@@ -231,21 +237,22 @@ section {
 
 .education-box2 {
   background: rgba(55, 55, 55, 0.7);
-  width: 40vw;
-  height: 28vh;
+  width: 30vw;
+  height: 30vh;
   margin: 2em;
   text-align: center;
   line-height: 1.5em;
   color: rgba(255, 165, 0, 0.9);
-  font-size: 1.2em;
+  font-size: 1em;
   border-radius: 1em;
   transition: all 0.5s ease;
   overflow: hidden;
+  word-wrap: break-word;
 }
 
 @media (max-width:769px) {
   .education-box2 {
-    width: 80%;
+    width: 70%;
     margin: 0px;
     margin-bottom: 5px;
     font-size: 1em;
