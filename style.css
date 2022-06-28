@@ -221,7 +221,7 @@ section {
     width: 100%;
     margin: 0px;
     margin-bottom: 5px;
-    font-size: 1em;
+    font-size: 14px;
   }
 }
 
@@ -255,7 +255,7 @@ section {
     width: 70%;
     margin: 0px;
     margin-bottom: 5px;
-    font-size: 1em;
+    font-size: 14px;
   }
 }
 
@@ -343,19 +343,20 @@ section {
 
 .experience-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
 }
 
 .experience-box {
   background: rgba(55, 55, 55, 0.7);
-  width: 30vw;
+  width: auto;
   height: 35vh;
   margin: 1em;
+  padding: 5px;
   text-align: center;
   line-height: 2em;
   color: rgba(255, 165, 0, 0.9);
-  font-size: 18px;
+  font-size: 16px;
   border-radius: 1em;
   word-wrap: break-word;
   transition: all 0.5s ease;
@@ -363,11 +364,17 @@ section {
 }
 
 @media (max-width:769px) {
+  .experience-container{
+    flex-direction: column;
+  }
+
   .experience-box {
     width: 100%;
     margin: 0px;
     margin-bottom: 5px;
     font-size: 1em;
+    font-size: 12px;
+    height: auto;
   }
 }
 
