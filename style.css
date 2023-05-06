@@ -556,11 +556,11 @@ audio::-webkit-media-controls-panel {
 }
 
 .contact-text-linkedin {
-  background: rgba(55, 55, 55, 0.7);
+  /* background: rgba(55, 55, 55, 0.7); */
   width: 20vw;
   height: 5vh;
   margin: 1em;
-  padding-top: 1vh;
+  /* padding-top: 1vh; */
   text-align: center;
   color: rgba(255, 165, 0, 0.9);
   font-size: 18px;
@@ -573,4 +573,8 @@ audio::-webkit-media-controls-panel {
     width: 100%;
     margin-left: 0px;
   }
+}
+
+.sbmtbutton{
+  cursor: pointer;
 }
