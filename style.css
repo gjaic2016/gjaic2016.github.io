@@ -143,9 +143,9 @@ section {
 .one {
   background-size: 100%;
 }
-.two {
+/* .two {
   background: rgba(6, 7, 53, 0.6);
-}
+} */
 
 .firstSection {
   display: grid;
