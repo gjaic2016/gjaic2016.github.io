@@ -127,7 +127,7 @@ section {
 }
 
 .textLarge {
-  font-size: clamp(2rem, 4vw, 5rem);
+  font-size: clamp(2rem, 3vw, 5rem);
   font-weight: bold;
 }
 
