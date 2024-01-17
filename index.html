@@ -1,289 +1,458 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./style.css" />
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <!-- <meta name="description" content="Your description">
+    <meta name="author" content="Your name"> -->
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+
+    <!-- Webpage Title -->
     <title>G.J.</title>
-  </head>
-  <body>
-    <div class="container backgroundImg">
-      <nav class="navbar">
-        <ul class="nav-links">
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#education">Education</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#exp">Experience</a>
-          </li>
-          <li>
-            <a href="#hobbies">Hobbies</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <section class="one">
-        <div id="home" class="firstSection">
-          <div class="logoPic">
-            <img src="media/gj.jpg" class="pic" alt="myPhoto" />
-          </div>
-          <div class="firstSection-box">
-            <div class="textLarge">Hello, my name is Goran.</div>
-          </div>
-        </div>
-      </section>
+    
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	
+	<!-- Favicon  -->
+    <!-- <link rel="icon" href="images/favicon.png"> -->
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+            
+            <!-- Image Logo -->
+            <!-- <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a>   -->
 
-      <div class="parallax"></div>
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <a class="navbar-brand logo-text page-scroll" href="index.html">G.J.</a>
 
-      <section id="about" class="two">
-        <div class="secondSection">
-          <div>
-            <h1>About me...</h1>
-          </div>
-          <div>
-            <img src="media/profPic2.jpg" class="profilePic" alt="myPhoto" />
-          </div>
-          <div class="textMedium">
-            I am developer
-            working towards acquiring software development skills.<br />
-            Personaly prefer simple and minimalistic design that offers
-            effortless usage for user. <br /> You can find out more about me on:  
-            <a href="https://www.linkedin.com/in/goran-j-7725a6169" style="color:orange; ">LinkedIn</a> and 
-            <a href="https://github.com/gjaic2016" style="color:orange; ">Github</a>
-          </div>
-        </div>
-      </section>
+            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-      <div class="parallax"></div>
-
-      <section id="education" class="two">
-        <div class="thirdSection">
-          <div class="section-title">
-            Education
-          </div>
-          <div class="education-container">
-            <div class="education-box">
-              <h4>Education</h4></br>
-              <div>
-                <ul>
-                  <li>Specialist engineer of Information Technology, 2022</li>
-                  University Of Applied Sciences VG
-                  <li>Bachelor of Information Technology, 2017</li>
-                  University Of Applied Sciences VG
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#header">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Extra</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item page-scroll" href="hobbies.html">Hobbies</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item page-scroll" href="graphic.html">Graphic design</a>
+                            <!-- <div class="dropdown-divider"></div>
+                            <a class="dropdown-item page-scroll" href="privacy.html">Privacy Policy</a> -->
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#contact">Contact</a>
+                    </li>
                 </ul>
-              </div>
-            </div>
-            <div class="education-box">
-              <h4>Technologies</h4></br>
-              <div>
-                <ul>
-                  <li>HTML, CSS, SQL, JS, REACT</li>
-                  <li>JAVA, SPRING</li>
-                  <li>GITHUB, GITLAB</li>
-                  <li>AZURE DEVOPS</li>
-                  <li>JIRA, CONFLUENCE</li>
-                </ul>
-              </div>
-            </div>
-            <div class="education-box">
-              <h4>Other</h4></br>
-              <div>
-                <li>Analysis and design of information systems</li>
-                <li>Application of BPM methodology</li>
-                <li>Sales strategy and promotion</li>
-                <li>Application of psychology in sales</li>
-                <li>Human resource management</li>
-              </div>
-            </div>
-          </div>
+                <span class="nav-item social-icons">
+                    <span class="fa-stack">
+                        <a href="https://github.com/gjaic2016">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-github fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="https://www.linkedin.com/in/goran-j-7725a6169/">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-linkedin fa-stack-1x"></i>
+                        </a>
+                    </span>
+                </span>
+            </div> <!-- end of navbar-collapse -->
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
 
-        </div>
-      </section>
 
-      <div class="parallax"></div>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h1 class="h1-large">I love to create simple and efficient product</h1>
+                        <a class="btn-solid-lg page-scroll" href="#about">Discover</a>
+                        <a class="btn-outline-lg page-scroll" href="#contact"><i class="fas fa-user"></i>Contact Me</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
 
-      <section id="projects" class="two">
-        <div class="thirdSection">
-          <div class="section-title">
-            Projects
-          </div>
-          <div class="project-container">
-            <div class="project-box">
-              <div class="card">
-                <div class="imgBox">
-                  <img src="media/weather.png" />
-                </div>
-                <div class="card-content">
-                  <h2>Weather forecast</h2>
-                  <p></br>
-                    Simple weather forecast</br></br>
-                    <a href="https://github.com/gjaic2016/weather_app" style="color:orange;">Check out code</a></br></br>
-                    <a href="https://weather-app2-psi.vercel.app" style="color:orange;">Try app >>></a>
-                    
-                  </p>
-                </div>
-              </div>
-              <div class="card">
-                <div class="imgBox">
-                  <img src="media/qfix.png" />
-                </div>
-                <div class="card-content">
-                  <h2>Quickfix</h2>
-                  <p></br>
-                    App intended for professional support and the
-                    offer of personal services. (HTML, CSS, MYSQL RDBMS)</br></br>
-                    PHP version<a href="https://github.com/gjaic2016/QuickFix" style="color:orange;"> Check out code</a></br></br>
-                    React version (REACT, EXPRESS.JS)<a href="https://github.com/gjaic2016/react_project_demo" style="color:orange;"> Check out code</a>
-                  </p>
-                </div>
-              </div>
-              <div class="card">
-                <div class="imgBox">
-                  <img src="media/todoapp.png" />
-                </div>
-                <div class="card-content">
-                  <h2>Todo app</h2>
-                  <p></br>
-                    Simple todo app with pdf export feature.
-                  </br></br>
-                    React, JS</br></br>
-                    <a href="https://github.com/gjaic2016/todo_app" style="color:orange;">Check out code</a></br></br>
-                    <a href="https://todo-app-sooty-two-57.vercel.app/" style="color:orange;">Try app >>></a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <div class="parallax"></div>
+    <!-- About-->
+    <div id="about" class="basic-1 bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="text-container first">
+                        <h2>Hi there I'm Goran,</h2>
+                        <p>And I love to create simple and efficient product for my customers. I love going through the entire process with the customer from concept, to design and then development and launch</p>
+                        <p><a class="blue" href="https://www.linkedin.com/in/goran-j-7725a6169/">Linkedin</a></p>
+                        <p><a class="blue" href="https://github.com/gjaic2016">Github</a></p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <div class="text-container second">
+                        <div class="time">2022</div>
+                        <h6>Smartis</h6>
+                        <p>DMS developer</p>
 
-      <section id="exp" class="two">
-        <div class="thirdSection">
-          <div class="section-title">
-            Experience
-          </div>
-          <div class="experience-container">
-            <div class="experience-box">
-              <h2>Apis IT, 2023.</h2>
-              <ul>
-                <li>junior java developer, web app development using Java, SQL, Spring framework...</li>
-              </ul>
-            </div>
-            </br>
-            <div class="experience-box">
-              <h2>Smartis, 2022.</h2>
-              <ul>
-                <li>junior developer for DMS, web app development using JS,</li>
-                <li>implementing new features to user interface, testing and code review...</li>  
-              </ul>
-            </div>
-            </br>
-            <div class="experience-box">
-              <h2>Infodom, 2019. - 2021.</h2>
-              <ul>
-                <li>junior developer, web app development with React framework,</li>
-                <li>implementing new features to user interface, manual testing for bugs,</li>
-                <li>customize app for mobile devices...</li>
-              </ul>
-            </div>
-            </br>
-            <div class="experience-box">
-              <h2>Span Academy Internship, 2018.</h2>
-              <ul>
-                <li>web app development with React and .NET, database design,</li>
-                <li>manual testing for bugs, customizing app for mobile devices...</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+                        <div class="time">2018</div>
+                        <h6>Span Academy Intership</h6>
+                        <p>Junior web developer</p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <div class="text-container third">
+                        <div class="time">2023</div>
+                        <h6>Apis IT</h6>
+                        <p>Web developer</p>
+                        <div class="time">2019 - 2021</div>
+                        <h6>Infodom</h6>
+                        <p>Web application development</p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of about -->
 
-      <div class="parallax"></div>
 
-      <section id="hobbies" class="two">
-        <div class="thirdSection">
-          <div class="section-title">
-            Hobbies</br>
-          </div>
-          <div class="hobby-container">
-              <div class="hobby-box">
-                Restoration of old electronics</br>
-                Repairing computers and mobile phones</br>
-                DIY projects</br>
-                Video production</br>
-                Audio production (Check audio player...)</br>
-              </div>
-              <div class="hobby-box2">
-                <div class="audioPlayerTitleText">
-                  Audio player
-                </div>
-                <div class="audioPlayerStyle">
-                  <audio src="" controls id="audioPlayer">
-                  Sorry, your browser doesn't support player.
-                  </audio>
-                </div>
-                <ul id="playlist" class="playlist">
-                  <li class="current-song"><a href="media/RoniG-deepHouse.mp3">Track 1</a></li>  
-                  <li><a href="media/RoniG-deepHouse2.mp3">Track 2</a></li>  
-                  <li><a href="media/RoniG-deepHouse3.mp3">Track 3</a></li>  
-                </ul>
-                <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
-                <script src="audioPlayer.js"></script>
-                <script>
-                  audioPlayer();
-                </script>
-              </div>
-          </div>
-        </div>
-      </section>
+    <!-- skills -->
+    <div id="skills" class="basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="h2-heading">Skills</h2>
+                    <p class="p-heading">With extensive experience in sales and wholesale operations, I possess strong analytical skills to discern and address the unique needs of clients</p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="text-box">
+                        <i class="far fa-gem"></i>
+                        <h4>DESIGN</h4>
+                        <p>I think successful projects start with good design. It lays basic foundation for future development</p>
+                    </div> <!-- end of text-box -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <div class="text-box">
+                        <i class="fas fa-code"></i>
+                        <h4>DEVELOPMENT</h4>
+                        <p>Code should offer simplicity and efficiency before all. My focus is to generate clean code that's well structured for reliability</p>
+                    </div> <!-- end of text-box -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <div class="text-box">
+                        <i class="fas fa-tv"></i>
+                        <h4>ANALYSIS</h4>
+                        <p>Providing a comprehensive analysis of user business requirements and seamlessly integrating them into the project for optimal implementation</p>
+                    </div> <!-- end of text-box -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-2 -->
+    <!-- end of skills -->
 
-      <div class="parallax"></div>
 
-      <section id="contact" class="two">
-        <div class="thirdSection">
-          <div class="contact-container">
-            <div class="contactPictureClass">
-              <img src="media/contactMe2.png" class="contact-pic" alt="myPhoto" />
-            </div>
-            <div class="contact-text">
-              <form action="https://formsubmit.co/f186c5973aad450a8044b6d71138b7fc" method="POST">
-                <input type="hidden" name="_subject" value="New mail" required>
-                <div>
-                  <input class="input-email" type="email" name="email" placeholder="Type your e-mail here... " required>
-                </div>
-                <div>
-                  <input class="input-message" type="text" name="message" placeholder="Write message here..." required>
-                </div>
-                <div>
-                  <button class="sbmtbutton" style="border-radius: 6px; font-size:18px;" type="submit">Send</button>
-                </div>
-              </form>
-            </div>
-            <div class="contact-text-linkedin">
-              <a href="https://www.linkedin.com/in/goran-j-7725a6169" style="color:orange; ">LinkedIn</a> 
-              <a href="https://github.com/gjaic2016" style="color:orange; ">Github</a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-  </body>
+    <!-- Details -->
+	<div class="split">
+		<div class="area-1">
+		</div><!-- end of area-1 on same line and no space between comments to eliminate margin white space --><div class="area-2 bg-gray">
+            <div class="container">    
+                <div class="row">
+                    <div class="col-lg-12">     
+                        
+                        <!-- Text Container -->
+                        <div class="text-container">
+                            <h2>Why Work With Me</h2>
+                            <p>I am a great communicator and love to invest the necessary time to understand the customer's problem very well
+                            Supporter of agile work using scrum methodology, but try to keep workflow simple and flexible</p>
+
+                            <h5>DEVELOPMENT SKILLS</h5>
+                            <p>I am familiar and work with HTML, CSS, JavaScript, Bootstrap and other modern frameworks like React</p>
+                            
+                            <div class="icons-container">
+                                <img src="images/details-icon-html.png" alt="alternative">
+                                <img src="images/details-icon-css.png" alt="alternative">
+                                <img src="images/details-icon-bootstrap.png" alt="alternative">
+                                <img src="images/details-icon-javascript.png" alt="alternative">
+                            </div> <!-- end of icons-container -->
+
+                            <h5>DESIGN TOOLS</h5>
+                            <p>My favorite design tools are Photoshop and Illustrator but I can create designs in Figma too</p>
+                            <div class="icons-container">
+                                <img src="images/details-icon-photoshop.png" alt="alternative">
+                                <img src="images/details-icon-illustrator.png" alt="alternative">
+                            </div> <!-- end of icons-container -->
+                        </div> <!-- end of text-container -->
+                        <!-- end of text container -->
+
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+		</div> <!-- end of area-2 -->
+    </div> <!-- end of split -->
+    <!-- end of details -->
+
+    <!-- Projects -->
+
+     <!-- Work experience -->
+     <div class="accordion-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="h2-heading">Work experience</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                   Apis IT, 2023.
+                                </button>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p>- junior java developer, </p>
+                                    <p>-  web app development using Java, SQL, Spring framework... </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Smartis, 2022.
+                                </button>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p>- developer for Document Managment System for insurance agencies, </p>
+                                    <p>- web app development using JS, </p>
+                                    <p>- implementing new features to user interface, </p>
+                                    <p>- data analytics and creating reports, </p>
+                                    <p>- testing and code review... </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Infodom, 2019. - 2021.
+                                </button>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p>- junior developer, </p>
+                                    <p>- web app development with React framework, </p>
+                                    <p>- implementing new features to user interface, </p>
+                                    <p>- manual testing for bugs, </p>
+                                    <p>- ustomizing app for mobile devices... </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-header" id="headingFive">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Span Academy Intership, 2018.
+                                </button>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p>- web app development with React and .NET, </p>
+                                    <p>- database design, </p>
+                                    <p>- manual testing for bugs, </p>
+                                    <p>- customizing app for mobile devices... </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- end of accordion -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of accordion-1 -->
+    <!-- end of work experience -->
+
+
+    <!-- Personal projects -->
+    <div class="basic-4">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="h2-heading">Personal projects</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="text-container">
+                        <div class="image-container">
+                            <a href="https://weather-app2-psi.vercel.app">
+                                <img class="img-fluid" src="images/work-1.jpg" alt="alternative">
+                            </a>
+                        </div> <!-- end of image-container -->
+                        <p><strong>For:</strong> Personal use, <strong>Project:</strong> Weather forecast, React </p>
+                        <p><a class="blue" href="https://github.com/gjaic2016/weather_app">Check code</a></p>
+                        <p><a class="blue" href="https://weather-app2-psi.vercel.app">TRY APP</a></p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+
+
+                <div class="col-lg-4">
+                    <div class="text-container">
+                        <div class="image-container">
+                            <a href="https://github.com/gjaic2016/react_project_demo">
+                                <img class="img-fluid" src="images/work-2.jpg" alt="alternative">
+                            </a>
+                        </div> <!-- end of image-container -->
+                        <p><strong>For:</strong> Personal use, <strong>Project:</strong> Quickfix, App intended for professional support and the offer of personal services. </p>
+                        <p><a class="blue" href="https://github.com/gjaic2016/QuickFix">Check PHP version on gihub</a></p>
+                        <p><a class="blue" href="https://github.com/gjaic2016/react_project_demo">Check React versoin on github</a></p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                
+                <div class="col-lg-4">
+                    <div class="text-container">
+                        <div class="image-container">
+                            <a href="https://todo-app-sooty-two-57.vercel.app">
+                                <img class="img-fluid" src="images/work-3.jpg" alt="alternative">
+                            </a>
+                        </div> <!-- end of image-container -->
+                        <p><strong>For:</strong> Personal use, <strong>Project:</strong> Todo list,  Simple todo app with pdf export feature.</p>
+                        <p></p><a class="blue" href="https://github.com/gjaic2016/todo_app">Check code</a></p>
+                        <p><a class="blue" href="https://todo-app-sooty-two-57.vercel.app">TRY APP</a></p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-4 -->
+    <!-- end of personal projects -->
+
+
+   <!-- Testimonials -->
+
+    <!-- Section Divider -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <hr class="section-divider">
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+    <!-- end of section divider -->
+
+    <!-- Contact -->
+    <div id="contact" class="form-1 bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Contact me</h2>
+                    <!-- <p class="p-heading">For any type of online project please don't hesitate to get in touch with me. The fastest way is to send me your message using the following email <a class="blue no-line" href="#your-link">contact@domain.com</a></p> -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Contact Form -->
+                    <form action="https://formsubmit.co/f186c5973aad450a8044b6d71138b7fc" method="POST">
+                        <input type="hidden" name="_subject" value="New mail" required>
+
+                        <div class="form-group">
+                          <input class="form-control-input" type="email" name="email" placeholder="Type your e-mail here... " required>
+                        </div>
+                        <div class="form-group"> 
+                          <input class="form-control-textarea" type="text" name="message" placeholder="Write message here..." required>
+                        </div>
+                        <div class="form-group">
+                          <button class="form-control-submit-button" style="border-radius: 6px; font-size:18px;" type="submit">Submit</button>
+                        </div>
+                      </form>
+                    <!-- end of contact form -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of form-1 -->  
+    <!-- end of contact -->
+
+
+    <!-- Footer -->
+    <div class="footer bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="social-container">
+                        <span class="fa-stack">
+                            <a href="https://github.com/gjaic2016">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://www.linkedin.com/in/goran-j-7725a6169/">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </div> <!-- end of social-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © <a class="no-line" href="#your-link">G. J.</a></p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    
+    	
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
 </html>
