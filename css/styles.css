@@ -6,12 +6,12 @@ Table Of Contents:
 - Navigation
 - Header
 - About
-- Services
+- Skills
 - Details
 - Projects
-- Works
-- Testimonials
-- Questions
+- Personal projects
+- Cards
+- Accordion
 - Contact
 - Footer 
 - Copyright
@@ -580,7 +580,7 @@ input[type='checkbox'] {
 
 
 /********************/
-/*     Services     */
+/*     Skills     */
 /********************/
 .basic-2 {
 	padding-top: 7.75rem;
@@ -691,9 +691,9 @@ input[type='checkbox'] {
 /* end of hover animation */
 
 
-/*****************/
-/*     Works     */
-/*****************/
+/*****************************/
+/*     Personal projects     */
+/*****************************/
 .basic-4 {
 	padding-top: 7.75rem;
 	padding-bottom: 1rem;
@@ -735,11 +735,42 @@ input[type='checkbox'] {
 	-webkit-transform: scale(1.15);
 	transform: scale(1.15);
 } 
+
+.basic-4 .tooltip {
+	position: relative;
+	display: inline-block;
+	opacity: 1;
+}
+
+.basic-4 .tooltip .tooltiptext {
+	visibility: hidden;
+	width: 200px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 6px;
+	top: 100%;
+	left: 50%;
+	margin-left: -60px;
+   
+	/* Position the tooltip text - see examples below! */
+	position: absolute;
+	z-index: 1;
+    /* opacity: 0;
+    transition: opacity 1s; */
+}
+
+.basic-4 .tooltip:hover .tooltiptext {
+	visibility: visible;
+    opacity: 1;
+}
+  
 /* end of hover animation */
 
 
 /************************/
-/*     Testimonials     */
+/*     Cards    */
 /************************/
 .cards-1 {
 	padding-top: 3rem;
@@ -788,7 +819,7 @@ input[type='checkbox'] {
 
 
 /*********************/
-/*     Questions     */
+/*     Accordion     */
 /*********************/
 .accordion-1 {
 	padding-top: 7.75rem;
@@ -890,7 +921,7 @@ input[type='checkbox'] {
 }
 
 .footer .fa-stack .fa-stack-2x {
-	color: #0b36a8;
+	color: #ffffff;
 	transition: all 0.2s ease;
 }
 
@@ -899,7 +930,7 @@ input[type='checkbox'] {
 }
 
 .footer .fa-stack:hover .fa-stack-2x {
-    color: #ffffff;
+    color: #0b36a8;
 }
 
 
@@ -1305,3 +1336,21 @@ a:hover.back-to-top {
 	transition: all 0.5s ease;
 	overflow:hidden;
   }
+
+
+/*************************/
+/*     Audio player     */
+/*************************/	
+
+.playlist {
+	list-style: none;
+}
+  
+.playlist li a {
+	color: orange;
+	text-decoration: none;
+}
+  
+.playlist .current-song a {
+	color: red;
+}
